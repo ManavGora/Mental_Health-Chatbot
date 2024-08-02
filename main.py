@@ -111,4 +111,4 @@ async def ai_response_generator(prompt: str) -> AsyncIterable[str]:
 # Prebuilt HTML endpoint
 @app.get('/{path:path}')
 async def html_landing() -> HTMLResponse:
-    return HTMLResponse(prebuilt_html(title='FastUI Demo'))
+    return HTMLResponse(prebuilt_html(title='FastUI'))
